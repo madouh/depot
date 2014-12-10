@@ -62,6 +62,9 @@
         <div class="row">
           <div class="span9">
             <%= bootstrap_flash %>
+             <p class="notice"><%= notice %></p>
+             <p><%=link_to 'Logout', destroy_user_session_path, method: :delete %></p>
+
             <%= yield %>
           </div>
           <div class="span3">
